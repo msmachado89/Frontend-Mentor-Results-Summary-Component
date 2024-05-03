@@ -2,7 +2,7 @@
   
   body {
     max-width: var(--max-mobile-width);
-    margin: 0 auto;
+    margin: 0 auto 5px;
     top: 0;
     justify-content: flex-start;
     
@@ -10,6 +10,7 @@
   .container {
     flex-direction: column;
     border-radius: 0;
+    box-shadow: none;
   }
   
   .container .your-result, .container .summary {
