@@ -1,0 +1,81 @@
+@media (max-width: 680px) {
+  
+  body {
+    max-width: var(--max-mobile-width);
+    margin: 0 auto;
+    top: 0;
+    justify-content: flex-start;
+    
+  }
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  
+  .container .your-result, .container .summary {
+    width: 100%;
+  }
+  
+  .container .your-result {
+    border-radius: 0 0 3rem 3rem;
+    padding: 2.4rem;
+  }
+
+  .container .your-result h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 2.4rem;
+  }
+
+  .container .your-result .circle {
+    width: 14rem;
+  
+    margin-bottom: 2.8rem;
+  
+  }
+
+  .container .your-result .circle p:first-child {
+    font-size: 5.6rem;
+  }
+  
+  .container .your-result .circle p:last-child {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+
+  .container .your-result .result h2 {
+    font-size: 2.4rem;
+    margin-bottom: .8rem;
+  }
+
+  .container .summary {
+  
+    padding: 2.4rem 3.2rem;
+  
+    gap: 1.4rem;
+  }
+
+  .container .summary h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .container .summary .summary-item {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .container .summary .summary-item p {
+    font-size: 1.6rem;
+  }
+
+  .container .summary .summary-item h3::before {
+    margin-right: 1.2rem;
+  }
+
+  .container .summary .btn {
+    margin-top: 1rem;
+    padding: 2rem 1.4rem;
+   
+  }
+  
+}

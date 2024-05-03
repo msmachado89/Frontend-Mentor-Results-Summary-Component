@@ -1,0 +1,243 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--font);
+
+  max-width: var(--max-desktop-width);
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--titles-color);
+}
+
+.container {
+  background-color: var(--background-color);
+
+  display: flex;
+
+  border-radius: 3rem;
+
+  margin-bottom: 5rem;
+}
+
+.container .your-result {
+  flex: 1;
+  width: 50%;
+  max-width: 41rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--left-bg-top-color),
+    var(--left-bg-bottom-color)
+  );
+
+  padding: 3.4rem;
+  border-radius: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container .your-result h2 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.container .your-result .circle {
+  aspect-ratio: 1/1;
+  width: 18.2rem;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.8rem;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--circle-top-color),
+    var(--circle-bottom-color)
+  );
+}
+
+.container .your-result .circle p:first-child {
+  font-size: 6.4rem;
+  color: var(--titles-color);
+  display: block;
+  font-weight: 800;
+}
+
+.container .your-result .circle p:last-child {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: -0.4rem;
+  font-weight: 700;
+  opacity: .5;
+}
+
+.container .your-result .result {
+  max-width: 85%;
+}
+
+.container .your-result .result h2 {
+  color: var(--titles-color);
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.container .your-result .result p {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.container .summary {
+  flex: 1;
+  width: 50%;
+  max-width: 48rem;
+
+  padding: 3.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.container .summary h2 {
+  color: var(--btn-color);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.container .summary .summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 1.6rem 1.4rem;
+
+  border-radius: 1rem;
+
+  color: var(--btn-color);
+  position: relative;
+}
+
+.container .summary .summary-item p {
+  font-size: 1.7rem;
+  font-weight: 800;
+  opacity: 1;
+}
+
+.container .summary .summary-item p span {
+  margin-left: 4px;
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+.container .summary .summary-item h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.container .summary .summary-item h3::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.container .summary .reaction {
+  background-color: var(--reaction-bg-color);
+}
+
+.container .summary .reaction h3 {
+  color: var(--reaction-color);
+}
+
+.container .summary .reaction h3::before {
+  background-image: url(../assets/images/icon-reaction.svg);
+}
+
+.container .summary .memory {
+  background-color: var(--memory-bg-color);
+}
+
+.container .summary .memory h3 {
+  color: var(--memory-color);
+}
+
+.container .summary .memory h3::before {
+  background-image: url(../assets/images/icon-memory.svg);
+}
+
+.container .summary .verbal {
+  background-color: var(--verbal-bg-color);
+}
+
+.container .summary .verbal h3 {
+  color: var(--verbal-color);
+}
+
+.container .summary .verbal h3::before {
+  background-image: url(../assets/images/icon-verbal.svg);
+}
+
+.container .summary .visual {
+  background-color: var(--visual-bg-color);
+}
+
+.container .summary .visual h3 {
+  color: var(--visual-color);
+}
+
+.container .summary .visual h3::before {
+  background-image: url(../assets/images/icon-visual.svg);
+}
+
+.container .summary .btn {
+  margin-top: 2.4rem;
+  border: none;
+  width: 100%;
+  padding: 1.6rem 1.4rem;
+  
+  font-size: 1.6rem;
+  font-weight: 600;
+  
+  border-radius: 5rem;
+  
+  color: var(--background-color);
+  background-color: var(--btn-color);
+}
+
+.container .summary .btn:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--left-bg-top-color),
+    var(--left-bg-bottom-color)
+  );
+
+  cursor: pointer;
+}
